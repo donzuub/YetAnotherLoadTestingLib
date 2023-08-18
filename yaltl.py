@@ -133,7 +133,3 @@ class LoadTester:
             t.join()
         self._analyze_results()
 
-
-# Example Usage
-tester = LoadTester("http://example.com")
-tester.stress_testing(threshold_time=2)  # threshold_time is in seconds
