@@ -37,6 +37,7 @@ from load_tester import LoadTester
 tester = LoadTester("http://example.com")
 tester.stress_testing(threshold_time=2)
 ```
+> *Replace the URL with your application's endpoint.*
 
 ```mermaid
 graph TB
@@ -60,7 +61,7 @@ graph TB
 
 ```
 
-> *Replace the URL with your application's endpoint.*
+
 
 ## Contributing 🤝
 
