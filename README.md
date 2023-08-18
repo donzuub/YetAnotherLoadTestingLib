@@ -38,6 +38,28 @@ tester = LoadTester("http://example.com")
 tester.stress_testing(threshold_time=2)
 ```
 
+```mermaid
+graph TB
+
+    Start[Start]
+    Choice{Which Test?}
+
+    Start --> Choice
+
+    Choice -->|Volume Testing| Volume[Volume Testing]
+    Choice -->|Stress Testing| Stress[Stress Testing]
+    Choice -->|Soak Testing| Soak[Soak Testing]
+    Choice -->|Spike Testing| Spike[Spike Testing]
+    Choice -->|Concurrency Testing| Concurrency[Concurrency Testing]
+
+    Volume --> End[End]
+    Stress --> End
+    Soak --> End
+    Spike --> End
+    Concurrency --> End
+
+```
+
 > *Replace the URL with your application's endpoint.*
 
 ## Contributing 🤝
